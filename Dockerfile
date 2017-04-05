@@ -10,7 +10,7 @@ RUN apt-get update && \
   AUTO_ADDED_PACKAGES=`apt-mark showauto` && \
   rm -rf /var/lib/apt/lists/*
 
-RUN npm install -g ${NODE_LIBS}
+RUN npm install -g $NODE_LIBS
 
 WORKDIR /app
 
